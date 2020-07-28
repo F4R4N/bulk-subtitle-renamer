@@ -2,7 +2,7 @@ import os, re
 
 src_dir = input("enter your source directory exact path : ")
 name = input("enter series name : ")
-season = int(input("enter season : "))
+season = input("enter season : ")
 quality = input("enter movie quality .etc(720p, 480p) : ")
 file_format = input("enter movie file format .etc(mkv, mp4) : ")
 
