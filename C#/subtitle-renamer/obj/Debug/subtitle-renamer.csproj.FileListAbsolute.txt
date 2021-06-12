@@ -1,0 +1,9 @@
+C:\Users\Parsa rayaneh\Documents\SharpDevelop Projects\subtitle-renamer\subtitle-renamer\bin\Debug\subtitle-renamer.exe.config
+C:\Users\Parsa rayaneh\Documents\SharpDevelop Projects\subtitle-renamer\subtitle-renamer\bin\Debug\subtitle-renamer.exe
+C:\Users\Parsa rayaneh\Documents\SharpDevelop Projects\subtitle-renamer\subtitle-renamer\bin\Debug\subtitle-renamer.pdb
+C:\Users\Parsa rayaneh\Documents\SharpDevelop Projects\subtitle-renamer\subtitle-renamer\obj\Debug\subtitle-renamer.csprojResolveAssemblyReference.cache
+C:\Users\Parsa rayaneh\Documents\SharpDevelop Projects\subtitle-renamer\subtitle-renamer\obj\Debug\subtitle_renamer.MainForm.resources
+C:\Users\Parsa rayaneh\Documents\SharpDevelop Projects\subtitle-renamer\subtitle-renamer\obj\Debug\subtitle-renamer.csproj.GenerateResource.Cache
+C:\Users\Parsa rayaneh\Documents\SharpDevelop Projects\subtitle-renamer\subtitle-renamer\obj\Debug\subtitle-renamer.exe
+C:\Users\Parsa rayaneh\Documents\SharpDevelop Projects\subtitle-renamer\subtitle-renamer\obj\Debug\subtitle-renamer.pdb
+C:\Users\Parsa rayaneh\Documents\SharpDevelop Projects\subtitle-renamer\subtitle-renamer\obj\Debug\subtitle_renamer.HelpForm.resources
