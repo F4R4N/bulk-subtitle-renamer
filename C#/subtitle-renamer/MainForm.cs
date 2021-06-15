@@ -44,7 +44,11 @@ namespace subtitle_renamer
 		{
 			var resault = new Dictionary<string, bool>();
 			
-			resault["path"] = Global.path != null;
+			if (Global.path == null && textBox4.Text != "")
+			{
+				Global.path = textBox4.Text;
+				resault["path"] = Global.path != "" || Global.path != null;
+			}
 			resault["name"] = Global.name != "";
 			resault["season"] = Global.season != "";
 			resault["quality"] = Global.quality != "";
@@ -64,7 +68,7 @@ namespace subtitle_renamer
 				
 				if (videos.Length == 0 || subtitles.Length == 0)
 				{
-					MessageBox.Show("there is no file with given movie or subtitle format in this directory.");
+					MessageBox.Show("there is no file with given movie or subtitle format in this directory.", "Bad path", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				else
 				{
@@ -81,18 +85,19 @@ namespace subtitle_renamer
 						string subtitleName = string.Format("{0}-S{1}-E{2}-{3}.{4}", Global.name, Global.season, episodeNumber, Global.quality, Global.subtitleFormat);
 						File.Move(subtitle.Name, subtitleName);
 					}
-					MessageBox.Show("Job Done!");
+					MessageBox.Show("Job Done!", "Renaming complete.", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				}
 			}
 			catch(DirectoryNotFoundException)
 			{
-				MessageBox.Show(string.Format("Unable to locate the given directory path at '{0}'.", Global.path));
+				MessageBox.Show(string.Format("Unable to locate the given directory path at '{0}'.", Global.path), "Directory not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				
 			}
 		}
 		void Button1Click(object sender, EventArgs e)
 		{
 			Global.path = ChooseFolder();
+			textBox4.Enabled = false;
 			textBox4.Text = Global.path;
 		}
 		void Button2Click(object sender, EventArgs e)
@@ -135,6 +140,10 @@ namespace subtitle_renamer
 		void Label8Click(object sender, EventArgs e)
 		{
 	
+		}
+		void TextBox4OnClick(object sender, EventArgs e)
+		{
+			button1.Enabled = false;
 		}
 	}
 }

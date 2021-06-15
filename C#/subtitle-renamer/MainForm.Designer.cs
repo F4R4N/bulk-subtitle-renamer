@@ -126,10 +126,9 @@ namespace subtitle_renamer
 			this.comboBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
-			"--select--",
+			"mkv",
 			"avi",
 			"flv",
-			"mkv",
 			"mpeg",
 			"mp2",
 			"mov",
@@ -224,7 +223,6 @@ namespace subtitle_renamer
 			this.comboBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.comboBox2.FormattingEnabled = true;
 			this.comboBox2.Items.AddRange(new object[] {
-			"--select--",
 			"srt",
 			"ass",
 			"ssa",
@@ -405,12 +403,12 @@ namespace subtitle_renamer
 			// 
 			// textBox4
 			// 
-			this.textBox4.Enabled = false;
 			this.textBox4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox4.Location = new System.Drawing.Point(157, 28);
 			this.textBox4.Name = "textBox4";
 			this.textBox4.Size = new System.Drawing.Size(298, 21);
 			this.textBox4.TabIndex = 29;
+			this.textBox4.Click += new System.EventHandler(this.TextBox4OnClick);
 			// 
 			// label1
 			// 
