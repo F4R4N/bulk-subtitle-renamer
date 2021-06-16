@@ -52,8 +52,6 @@ namespace subtitle_renamer
 			resault["name"] = Global.name != "";
 			resault["season"] = Global.season != "";
 			resault["quality"] = Global.quality != "";
-			resault["videoFormat"] = Global.videoFormat != "--select--";
-			resault["subtitleFormat"] = Global.subtitleFormat != "--select--";
 			return resault;
 		}
 		public void rename()
@@ -75,13 +73,13 @@ namespace subtitle_renamer
 					var regex = new Regex(@"\d+");
 					foreach(FileInfo video in videos)
 					{
-						string episodeNumber = regex.Matches(video.Name)[Global.videoIndex].ToString();
+						string episodeNumber = regex.Matches(video.Name)[Global.videoIndex-1].ToString();
 						string videoName = string.Format("{0}-S{1}-E{2}-{3}.{4}", Global.name, Global.season, episodeNumber, Global.quality, Global.videoFormat);
 						File.Move(video.Name, videoName);
 					}
 					foreach(FileInfo subtitle in subtitles)
 					{
-						string episodeNumber = regex.Matches(subtitle.Name)[Global.subtitleIndex].ToString();
+						string episodeNumber = regex.Matches(subtitle.Name)[Global.subtitleIndex-1].ToString();
 						string subtitleName = string.Format("{0}-S{1}-E{2}-{3}.{4}", Global.name, Global.season, episodeNumber, Global.quality, Global.subtitleFormat);
 						File.Move(subtitle.Name, subtitleName);
 					}

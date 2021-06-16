@@ -113,7 +113,7 @@ namespace subtitle_renamer
 			// button1
 			// 
 			this.button1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(461, 24);
+			this.button1.Location = new System.Drawing.Point(453, 23);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(92, 29);
 			this.button1.TabIndex = 0;
@@ -166,7 +166,7 @@ namespace subtitle_renamer
 			this.textBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox1.Location = new System.Drawing.Point(223, 81);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(259, 21);
+			this.textBox1.Size = new System.Drawing.Size(293, 21);
 			this.textBox1.TabIndex = 5;
 			// 
 			// textBox2
@@ -174,7 +174,7 @@ namespace subtitle_renamer
 			this.textBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox2.Location = new System.Drawing.Point(223, 132);
 			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(259, 21);
+			this.textBox2.Size = new System.Drawing.Size(293, 21);
 			this.textBox2.TabIndex = 6;
 			// 
 			// textBox3
@@ -182,21 +182,31 @@ namespace subtitle_renamer
 			this.textBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox3.Location = new System.Drawing.Point(223, 181);
 			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(259, 21);
+			this.textBox3.Size = new System.Drawing.Size(293, 21);
 			this.textBox3.TabIndex = 7;
 			// 
 			// numericUpDown1
 			// 
 			this.numericUpDown1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.numericUpDown1.Location = new System.Drawing.Point(310, 291);
+			this.numericUpDown1.Location = new System.Drawing.Point(343, 290);
 			this.numericUpDown1.Maximum = new decimal(new int[] {
-			6,
+			10,
+			0,
+			0,
+			0});
+			this.numericUpDown1.Minimum = new decimal(new int[] {
+			1,
 			0,
 			0,
 			0});
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(163, 21);
 			this.numericUpDown1.TabIndex = 8;
+			this.numericUpDown1.Value = new decimal(new int[] {
+			2,
+			0,
+			0,
+			0});
 			// 
 			// label4
 			// 
@@ -204,9 +214,9 @@ namespace subtitle_renamer
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
 			this.label4.Location = new System.Drawing.Point(6, 288);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(287, 18);
+			this.label4.Size = new System.Drawing.Size(328, 36);
 			this.label4.TabIndex = 9;
-			this.label4.Text = "episode index in video name (strat from 0):";
+			this.label4.Text = "which number is episode number in video name?\r\n(if you dont know see Help)";
 			// 
 			// label5
 			// 
@@ -262,28 +272,38 @@ namespace subtitle_renamer
 			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
 			this.label8.Location = new System.Drawing.Point(6, 403);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(298, 18);
+			this.label8.Size = new System.Drawing.Size(339, 36);
 			this.label8.TabIndex = 14;
-			this.label8.Text = "episode index in subtitle name (strat from 0):";
+			this.label8.Text = "which number is episode number in subtitle name?\r\n(if you dont know see Help)\r\n";
 			this.label8.Click += new System.EventHandler(this.Label8Click);
 			// 
 			// numericUpDown2
 			// 
 			this.numericUpDown2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.numericUpDown2.Location = new System.Drawing.Point(310, 405);
+			this.numericUpDown2.Location = new System.Drawing.Point(343, 405);
 			this.numericUpDown2.Maximum = new decimal(new int[] {
-			6,
+			10,
+			0,
+			0,
+			0});
+			this.numericUpDown2.Minimum = new decimal(new int[] {
+			1,
 			0,
 			0,
 			0});
 			this.numericUpDown2.Name = "numericUpDown2";
 			this.numericUpDown2.Size = new System.Drawing.Size(160, 21);
 			this.numericUpDown2.TabIndex = 15;
+			this.numericUpDown2.Value = new decimal(new int[] {
+			2,
+			0,
+			0,
+			0});
 			// 
 			// button2
 			// 
 			this.button2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(445, 486);
+			this.button2.Location = new System.Drawing.Point(428, 485);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(108, 37);
 			this.button2.TabIndex = 17;
@@ -346,7 +366,7 @@ namespace subtitle_renamer
 			this.errorvideoIndex.AutoSize = true;
 			this.errorvideoIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
 			this.errorvideoIndex.ForeColor = System.Drawing.Color.Red;
-			this.errorvideoIndex.Location = new System.Drawing.Point(16, 309);
+			this.errorvideoIndex.Location = new System.Drawing.Point(217, 306);
 			this.errorvideoIndex.Name = "errorvideoIndex";
 			this.errorvideoIndex.Size = new System.Drawing.Size(0, 18);
 			this.errorvideoIndex.TabIndex = 23;
@@ -406,7 +426,7 @@ namespace subtitle_renamer
 			this.textBox4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox4.Location = new System.Drawing.Point(157, 28);
 			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(298, 21);
+			this.textBox4.Size = new System.Drawing.Size(290, 21);
 			this.textBox4.TabIndex = 29;
 			this.textBox4.Click += new System.EventHandler(this.TextBox4OnClick);
 			// 
@@ -467,7 +487,7 @@ namespace subtitle_renamer
 			// button3
 			// 
 			this.button3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.Location = new System.Drawing.Point(327, 486);
+			this.button3.Location = new System.Drawing.Point(310, 485);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(108, 37);
 			this.button3.TabIndex = 35;
@@ -479,7 +499,7 @@ namespace subtitle_renamer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(564, 534);
+			this.ClientSize = new System.Drawing.Size(550, 534);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.label14);
 			this.Controls.Add(this.linkLabel2);
