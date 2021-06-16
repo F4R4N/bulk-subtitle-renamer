@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label13.Text" xml:space="preserve">
-    <value>watch series video name. where is the episode number?
+    <value>where is the episode number in video name?
 for example:
 Attack-on-titan-S01-E08-720p.mkv
 episode number is the second group of number in the name.
-Note that index start from 0. so its at index 1.
+so it should be 2 set it to 3 in the app.
 
 example:
 the-100-S04-E03-480px256.srt
 episode number is third group of number in subtitle name.
-so index is 2.</value>
+so answer is 3. set it to 3 in the app.</value>
   </data>
 </root>
