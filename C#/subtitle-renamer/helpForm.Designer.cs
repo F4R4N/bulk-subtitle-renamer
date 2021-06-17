@@ -31,6 +31,7 @@ namespace subtitle_renamer
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.PictureBox pictureBox1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -65,12 +66,14 @@ namespace subtitle_renamer
 			this.label9 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
 			this.label14 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.label13 = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -170,46 +173,26 @@ namespace subtitle_renamer
 			this.label10.Font = new System.Drawing.Font("Verdana", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label10.Location = new System.Drawing.Point(185, 153);
 			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(440, 34);
+			this.label10.Size = new System.Drawing.Size(585, 17);
 			this.label10.TabIndex = 9;
-			this.label10.Text = "video file extension. there are several file formats to choose. \r\ne.g.(mp4, mkv, " +
-	"etc.)";
+			this.label10.Text = "video file extension. there are several file formats to choose. e.g.(mp4, mkv, et" +
+	"c.)";
 			// 
 			// label11
 			// 
 			this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.label11.Font = new System.Drawing.Font("Verdana", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(0, 249);
+			this.label11.Location = new System.Drawing.Point(0, 221);
 			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(799, 2);
+			this.label11.Size = new System.Drawing.Size(1200, 2);
 			this.label11.TabIndex = 10;
 			this.label11.Text = "label11";
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Verdana", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(14, 268);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(383, 17);
-			this.label12.TabIndex = 11;
-			this.label12.Text = "episode number in video name or subtitle name:";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Verdana", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(14, 295);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(438, 170);
-			this.label13.TabIndex = 12;
-			this.label13.Text = resources.GetString("label13.Text");
 			// 
 			// label14
 			// 
 			this.label14.AutoSize = true;
 			this.label14.Font = new System.Drawing.Font("Verdana", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.Location = new System.Drawing.Point(14, 206);
+			this.label14.Location = new System.Drawing.Point(14, 186);
 			this.label14.Name = "label14";
 			this.label14.Size = new System.Drawing.Size(180, 17);
 			this.label14.TabIndex = 13;
@@ -219,12 +202,12 @@ namespace subtitle_renamer
 			// 
 			this.label15.AutoSize = true;
 			this.label15.Font = new System.Drawing.Font("Verdana", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(200, 206);
+			this.label15.Location = new System.Drawing.Point(200, 186);
 			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(455, 34);
+			this.label15.Size = new System.Drawing.Size(584, 17);
 			this.label15.TabIndex = 14;
-			this.label15.Text = "subtitle file extension. there are several file formats to choose. \r\ne.g.(srt, as" +
-	"s, etc.)";
+			this.label15.Text = "subtitle file extension. there are several file formats to choose. e.g.(srt, ass," +
+	" etc.)";
 			// 
 			// label16
 			// 
@@ -246,17 +229,48 @@ namespace subtitle_renamer
 			this.label17.TabIndex = 16;
 			this.label17.Text = "put only one season of series in the directory.";
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(14, 268);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(585, 412);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 17;
+			this.pictureBox1.TabStop = false;
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Verdana", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.Location = new System.Drawing.Point(605, 268);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(413, 224);
+			this.label13.TabIndex = 19;
+			this.label13.Text = resources.GetString("label13.Text");
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Verdana", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.Location = new System.Drawing.Point(14, 237);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(383, 17);
+			this.label12.TabIndex = 18;
+			this.label12.Text = "episode number in video name or subtitle name:";
+			// 
 			// HelpForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(699, 481);
+			this.ClientSize = new System.Drawing.Size(1017, 684);
+			this.Controls.Add(this.label13);
+			this.Controls.Add(this.label12);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.label17);
 			this.Controls.Add(this.label16);
 			this.Controls.Add(this.label15);
 			this.Controls.Add(this.label14);
-			this.Controls.Add(this.label13);
-			this.Controls.Add(this.label12);
 			this.Controls.Add(this.label11);
 			this.Controls.Add(this.label10);
 			this.Controls.Add(this.label9);
@@ -272,6 +286,7 @@ namespace subtitle_renamer
 			this.MaximizeBox = false;
 			this.Name = "HelpForm";
 			this.Text = "HelpForm";
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
